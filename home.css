@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/46f5829f-ca93-4682-8c78-248c522f0c70.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Bitcount Single", system-ui;
+}
+
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.button {
+    --border-right: 6px;
+    --animation-color: #FA8072 ;
+    --fs-size: inherit;
+    letter-spacing: 3px;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.desc-text {
+    text-decoration: underline;
+    text-decoration-color: #FA8072;
+}
+
+li svg {
+    color: #eee;
+}
+
+li svg:hover {
+    color: #FA8072;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 300ms;
+}
