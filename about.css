@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("/46f5829f-ca93-4682-8c78-248c522f0c70.jpg");
+    background-image: url("/img/46f5829f-ca93-4682-8c78-248c522f0c70.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -30,7 +30,6 @@ body {
     letter-spacing: 3px;
     text-decoration: none;
     position: relative;
-    text-transform: uppercase;
     -webkit-text-stroke: 1px var(--text-stroke-color);
 }
 
