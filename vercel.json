@@ -1,0 +1,12 @@
+{
+    "redirects": [
+        { "source": "/porfolio.html", "destination": "/portfolio.html", "permanent": true },
+        { "source": "/porfolio", "destination": "/portfolio.html", "permanent": true }
+    ],
+    "headers": [
+        {
+            "source": "/img/(.*)",
+            "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+        }
+    ]
+}
